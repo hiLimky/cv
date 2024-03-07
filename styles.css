@@ -1,6 +1,5 @@
 /* styles.css */
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +10,7 @@
 body {
     background-color: #f4f4f4; /* Light gray */
     color: #333; /* Almost black */
+    text-align : justify;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -51,15 +51,6 @@ nav ul li a.active {
     border-bottom: 2px solid #f4f4f4; /* Just an example, you can customize as per your design preference */
 }
 
-/* ... existing styles ... */
-
-@media (max-width: 600px) { 
-    nav {
-        display: none;
-    }
-}
-
-
 /* Content Sections */
 section {
     padding: 2rem;
@@ -98,7 +89,7 @@ article {
 }
 
 article img {
-    max-width: 30%;             /* Adjust as needed */
+    width: 30%;             /* Adjust as needed */
     margin-left: 1rem;          /* Space between image and text content */
 }
 
@@ -150,7 +141,6 @@ button:hover {
     position: relative; /* Relative positioning for potential visual effects */
 }
 
-/* ... existing styles ... */
 
 #top {
     display: flex;
@@ -185,4 +175,22 @@ button:hover {
     padding: 12px 24px;    /* Larger button */
     font-size: 1em;        /* Larger font for button */
     margin-top: 1rem;      /* Spacing above the button */
+}
+
+@media (max-width: 600px) { 
+    body{
+        font-size: 12px;
+    }
+    nav {
+        display: none;
+    }
+    article{
+        display: block;
+    }
+
+    article img{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
 }
