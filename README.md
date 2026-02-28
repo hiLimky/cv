@@ -16,3 +16,14 @@ Edit files under `data/` to update profile/CV content without touching page layo
 python3 -m http.server 4173
 ```
 Open: `http://127.0.0.1:4173`
+
+## Merge conflict helper (PR against `main`)
+If your PR reports conflicts in `index.html`, `scripts.js`, `styles.css`, run:
+```bash
+git fetch origin
+./scripts/resolve_pr_conflicts.sh origin/main
+```
+Then push:
+```bash
+git push --force-with-lease
+```
