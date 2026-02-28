@@ -1,196 +1,264 @@
-/* styles.css */
+:root {
+  --bg: #09090b;
+  --panel: #111117;
+  --panel-2: #161622;
+  --text: #f5f7ff;
+  --muted: #b7bdd3;
+  --line: #252538;
+  --accent: #7c8cff;
+  --accent-2: #33d1ff;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif; /* A generic choice, consider using something like 'Roboto', 'Open Sans', etc. from Google Fonts */
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f4f4f4; /* Light gray */
-    color: #333; /* Almost black */
-    text-align : justify;
-    font-size: 16px;
-    line-height: 1.6;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top right, #1b1f4f 0%, var(--bg) 45%);
+  line-height: 1.6;
 }
 
-/* Navigation */
+.container {
+  width: min(1080px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(9, 9, 12, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 20;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+  gap: 0.8rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
 nav {
-    background-color: #333;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensures the nav is always on top */
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style-type: none;
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 600;
 }
 
-nav li {
-    margin: 0 15px;
+nav a:hover,
+nav a.active {
+  color: var(--text);
+  background: rgba(124, 140, 255, 0.22);
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #555; /* Slightly lighter than the nav bg */
-}
-
-nav ul li a.active {
-    background-color: #555; /* Active state */
-    border-bottom: 2px solid #f4f4f4; /* Just an example, you can customize as per your design preference */
-}
-
-/* Content Sections */
-section {
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 5px;
-    background-color: #fff; /* White background for content for contrast */
-}
-
-h1, h2, h3 {
-    margin-bottom: 0.5rem;
-    color: #444; /* Slightly lighter than body text */
-}
-
-p{
-    text-indent: 10px;
-    margin-bottom:5px;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto; /* Center the images */
-}
-
-/* Papers, Awards, Career, etc. */
-article {
-    margin: 1rem 0;
-    padding: 1rem;
-    border: 1px solid #ddd; /* Very light gray border */
-    border-radius: 5px;
-    transition: box-shadow 0.3s;
-
-    display: flex;               /* Make article a flex container */
-    align-items: center;         /* Vertically align items in the middle */
-    justify-content: space-between; /* Maximize space between text and image */
-}
-
-article img {
-    width: 30%;             /* Adjust as needed */
-    margin-left: 1rem;          /* Space between image and text content */
-}
-
-article > div {
-    flex: 1;                    /* Allow the div to grow and occupy available space */
-    padding-right: 1rem;        /* Spacing from the right edge */
-}
-
-article:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-
-/* ... existing styles ... */
-
-button {
-    background-color: #4CAF50; /* Color of the button */
-    border: none;
-    color: white; /* Text color */
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049; /* Darker shade for hover effect */
-}
-
-
-.profile-container {
-    text-align: center; /* Center-align everything in the container */
-    position: relative; /* Relative positioning for potential visual effects */
-}
-
-
-#top {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center;    /* Center children horizontally */
-    justify-content: center;/* Center children vertically */
-    height: 70vh;          /* Occupy full viewport height */
-    font-size: 1.5em;       /* Increase font-size noticeably */
+.hero {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+  padding: 4.5rem 0 1.5rem;
+  align-items: center;
 }
 
 .profile-pic {
-    width: 200px;           /* Increased size */
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #4CAF50;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 1rem;   /* Spacing below the image */
+  width: 220px;
+  height: 220px;
+  border-radius: 24px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
-.profile-pic:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.chip {
+  display: inline-block;
+  background: rgba(51, 209, 255, 0.13);
+  color: #b7eeff;
+  border: 1px solid rgba(51, 209, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
 }
 
-#top h1 {
-    font-size: 2em;        /* Make the name even larger */
-    margin-bottom: 1rem;   /* Spacing below the name */
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
 }
 
-#top button {
-    padding: 12px 24px;    /* Larger button */
-    font-size: 1em;        /* Larger font for button */
-    margin-top: 1rem;      /* Spacing above the button */
+h1 span {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.7em;
 }
 
-@media (max-width: 600px) { 
-    body{
-        font-size: 12px;
-    }
-    nav {
-        display: none;
-    }
-    article{
-        display: block;
-    }
+.hero-text p {
+  color: var(--muted);
+}
 
-    article img{
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-    }
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.hero-links a {
+  color: var(--text);
+  text-decoration: none;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+}
+
+.section {
+  padding: 1.2rem 0;
+  scroll-margin-top: 90px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.1rem;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.card a {
+  color: var(--accent-2);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.timeline>li {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.timeline.compact>li {
+  border: 0;
+  background: transparent;
+  padding: 0.25rem 0;
+}
+
+.meta {
+  color: #9ca7d8;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.projects {
+  grid-template-columns: 1fr;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-inner a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .grid.two,
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-pic {
+    width: min(50vw, 220px);
+    height: min(50vw, 220px);
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.8rem 0;
+  }
 }
