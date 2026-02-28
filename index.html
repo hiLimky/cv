@@ -7,14 +7,19 @@
   <title>Gwonyeong Lim | CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="logo" href="#top">GWONYEONG LIM</a>
+      <a class="logo" href="#top">CV.md</a>
       <nav>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -27,213 +32,69 @@
   </header>
 
   <main>
-    <section class="hero container reveal">
+    <section class="hero container reveal" id="hero">
       <img src="profile.png" alt="Profile photo" class="profile-pic" />
       <div class="hero-text">
-        <p class="chip">M.S. Candidate · HCI / XR / Applied AI</p>
-        <h1>Gwonyeong Lim <span>(임권영)</span></h1>
-        <p>
-          I study and build human-centered interactive systems across HCI, Mixed Reality, and AI-driven experiences.
-          My focus is translating research ideas into practical prototypes that improve engagement and user motivation.
-        </p>
-        <div class="hero-links">
-          <a href="mailto:limky@korea.ac.kr">limky@korea.ac.kr</a>
-          <a href="https://github.com/[your-id]" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/[your-id]/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="[your-portfolio-link]" target="_blank" rel="noreferrer">Portfolio</a>
-        </div>
+        <p class="chip" id="hero-title"></p>
+        <h1 id="hero-name"></h1>
+        <p class="markdown" id="hero-summary"></p>
+        <div class="hero-links" id="hero-links"></div>
       </div>
     </section>
 
     <section id="about" class="container section reveal">
       <h2>About</h2>
       <div class="grid two">
-        <article class="card">
+        <article class="card markdown-block">
           <h3>Research / Professional Interests</h3>
-          <ul>
-            <li>Human-Computer Interaction (HCI)</li>
-            <li>Mixed Reality / XR Interaction Design</li>
-            <li>User Engagement and Motivation</li>
-            <li>Video Games and Applied AI</li>
-            <li>[Add another focus area]</li>
-          </ul>
+          <ul id="interests-list"></ul>
         </article>
 
-        <article class="card">
+        <article class="card markdown-block">
           <h3>Education</h3>
-          <ul class="timeline compact">
-            <li>
-              <strong>Korea University</strong>
-              <p>M.S. Candidate, Computer Science and Engineering (Mar 2024 – Present)</p>
-              <p>Researcher at Digital eXPerience Lab (dxp.korea.ac.kr)</p>
-            </li>
-            <li>
-              <strong>Sogang University</strong>
-              <p>
-                B.A.S. Art & Technology / B.S. Computer Science and Engineering / B.S. Artificial Intelligence
-                (Mar 2018 – Feb 2024, Cum Laude)
-              </p>
-            </li>
-            <li>
-              <strong>[Additional Degree / Program]</strong>
-              <p>[Degree], [Major], [Start Year] – [End Year]</p>
-            </li>
-          </ul>
+          <ul class="timeline compact" id="education-list"></ul>
         </article>
       </div>
     </section>
 
     <section id="experience" class="container section reveal">
       <h2>Experience</h2>
-      <ul class="timeline">
-        <li>
-          <h3>Researcher · Digital eXPerience Lab, Korea University</h3>
-          <p class="meta">2024 – Present</p>
-          <p>Conducting XR/HCI user experience research and supporting interaction prototyping and experiment design.</p>
-        </li>
-        <li>
-          <h3>Research Intern · Center for Human-inspired AI, Sogang University</h3>
-          <p class="meta">2023</p>
-          <p>Participated in AI-based interactive system planning, prototype implementation, and demo preparation.</p>
-        </li>
-        <li>
-          <h3>Teaching Assistant · Sogang University / Korea University</h3>
-          <p class="meta">2021 – 2024</p>
-          <p>Supported programming and AI-related coursework through labs, code feedback, and student mentoring.</p>
-        </li>
-        <li>
-          <h3>Instructor · High School / Coding Academy</h3>
-          <p class="meta">2022 – 2023</p>
-          <p>Taught game design, game programming, and visual computing classes for youth learners.</p>
-        </li>
-        <li>
-          <h3>[Additional Role Title] · [Organization]</h3>
-          <p class="meta">[Month Year] – [Month Year]</p>
-          <p>[Add your key responsibility and measurable impact in 1–2 lines.]</p>
-        </li>
-      </ul>
+      <ul class="timeline" id="experience-list"></ul>
     </section>
 
     <section id="projects" class="container section reveal">
       <h2>Selected Projects</h2>
-      <div class="grid projects">
-        <article class="card project">
-          <img src="image4.jpeg" alt="MONOWAVE thumbnail" />
-          <div>
-            <h3>MONOWAVE</h3>
-            <p class="meta">Team Lead, Game Programming · 2023 – Present</p>
-            <p>
-              Puzzle-platformer game project by team BBB. Exhibited at BIC Festival and Burning Beaver, and selected in
-              Made With Unity Korea Award.
-            </p>
-          </div>
-        </article>
-
-        <article class="card project">
-          <img src="image8.png" alt="Signal Journey thumbnail" />
-          <div>
-            <h3>Signal Journey</h3>
-            <p class="meta">VR Development · 2023 – 2024</p>
-            <p>
-              VR interaction project exploring proximity and emotion through multimodal cues (visual, audio, and thermal stimuli).
-            </p>
-          </div>
-        </article>
-
-        <article class="card project">
-          <img src="image9.png" alt="PHOTOWAVE thumbnail" />
-          <div>
-            <h3>PHOTOWAVE</h3>
-            <p class="meta">Design and Planning · 2023</p>
-            <p>
-              AI-powered photo kiosk project using facial-expression recognition; evaluated through exhibition-based user observation.
-            </p>
-          </div>
-        </article>
-
-        <article class="card project">
-          <img src="image3.png" alt="My Cat is VIRTUALLY Cute thumbnail" />
-          <div>
-            <h3>My Cat is VIRTUALLY Cute, or Maybe Not?</h3>
-            <p class="meta">Team Lead, Game Programming · 2022</p>
-            <p>
-              XR simulation game with Leap Motion hand-gesture interaction; advanced to the 3rd round of the 2023 Metaverse Developer Contest.
-            </p>
-          </div>
-        </article>
-
-        <article class="card project">
-          <img src="image2.png" alt="Backseat Programmer thumbnail" />
-          <div>
-            <h3>BACKSEAT PROGRAMMER</h3>
-            <p class="meta">AI Model Implementation & Client Programming · 2023</p>
-            <p>
-              Korean voice-recognition driving game project developed for NLP coursework; received a convergence technology contest award.
-            </p>
-          </div>
-        </article>
-
-        <article class="card project">
-          <img src="image7.png" alt="Additional project placeholder" />
-          <div>
-            <h3>[Additional Project Name]</h3>
-            <p class="meta">[Your Role] · [Year-Year]</p>
-            <p>[What this project does + your contribution + measurable outcome.]</p>
-          </div>
-        </article>
-      </div>
+      <div class="grid projects" id="projects-list"></div>
     </section>
 
     <section id="publications" class="container section reveal">
       <h2>Publications</h2>
-      <article class="card">
-        <ul>
-          <li>
-            <strong>Intuitive XR Interface for Service Robot Command</strong> — KIPS Conference (2023),
-            <a href="https://kiss.kstudy.com/Detail/Ar?key=4028512" target="_blank" rel="noreferrer">link</a>
-          </li>
-          <li>
-            <strong>PHOTOWAVE, Photo Kiosk Based on Facial Recognition AI Model</strong> — HCI Korea (2024),
-            <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11714852" target="_blank" rel="noreferrer">link</a>
-          </li>
-          <li><strong>[Paper Title]</strong> — [Venue], [Year], <a href="[paper-link]">[link]</a></li>
-        </ul>
+      <article class="card markdown-block">
+        <ul id="publications-list"></ul>
       </article>
     </section>
 
     <section id="awards" class="container section reveal">
       <h2>Awards</h2>
-      <article class="card">
-        <ul>
-          <li>Best Excellence Award · Sogang Convergence Technology Contest (2023-2)</li>
-          <li>Excellence Award · Sogang Convergence Technology Contest (2023-1)</li>
-          <li>Top 3 Student Team · Made With Unity Korea Award (2023)</li>
-          <li>Bronze Award · KIPS Spring Conference Paper Contest (2023)</li>
-          <li>[Additional Award] · [Organization] · [Year]</li>
-        </ul>
+      <article class="card markdown-block">
+        <ul id="awards-list"></ul>
       </article>
     </section>
 
     <section id="contact" class="container section reveal">
       <h2>Contact</h2>
-      <article class="card">
-        <p><strong>Email:</strong> limky@korea.ac.kr</p>
-        <p><strong>Phone:</strong> +82-10-6824-5512</p>
-        <p><strong>Location:</strong> Seoul, South Korea</p>
-        <p><strong>Availability:</strong> Open to research collaboration and interactive system development opportunities.</p>
-        <p><strong>Additional Link:</strong> [Website / CV PDF / Scholar Profile]</p>
-      </article>
+      <article class="card markdown-block" id="contact-list"></article>
     </section>
   </main>
 
   <footer>
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Gwonyeong Lim</p>
+      <p>© <span id="year"></span> <span id="footer-name"></span></p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="scripts.js" type="module"></script>
 </body>
 
 </html>
