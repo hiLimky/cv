@@ -49,10 +49,12 @@ const hydrateProfile = (rows) => {
   const heroTitle = document.getElementById('hero-title');
   const heroSummary = document.getElementById('hero-summary');
   const footerName = document.getElementById('footer-name');
+  const profileImage = document.querySelector('.profile-pic');
 
   heroName.innerHTML = `${escapeHtml(profile.name)} <span>(${escapeHtml(profile.name_native)})</span>`;
   heroTitle.textContent = profile.title;
   heroSummary.innerHTML = parseInlineMarkdown(profile.summary);
+  if (profileImage && profile.profile_image) profileImage.src = profile.profile_image;
   footerName.textContent = profile.name;
 
   const heroLinks = document.getElementById('hero-links');
@@ -202,7 +204,7 @@ const boot = async () => {
 
     setHTML('#projects-list', projects.map((row) => `
       <article class="card project reveal">
-        <img src="${escapeHtml(row.image)}" alt="${escapeHtml(row.title)} thumbnail" />
+        <img src="${escapeHtml(row.image || 'image7.png')}" alt="${escapeHtml(row.title)} thumbnail" />
         <div>
           <h3>${escapeHtml(row.title)}</h3>
           <p class="meta">${escapeHtml(row.role)} · ${escapeHtml(row.period)}</p>
