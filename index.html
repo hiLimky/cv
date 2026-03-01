@@ -2,369 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gwonyeong Lim</title>
-
-    <!-- VueJS Framework -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-
-    <!-- GSAP for Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
-
-    <!-- Add links to CSS and JS files which will be provided later -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gwonyeong Lim | CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div id="app">
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
 
-        <!-- Top Navigator -->
-        <nav>
-            <ul>
-                <li><a href="#top">Top</a></li>
-                <li><a href="#research-interests">Research Interests</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#papers">Papers</a></li>
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#others">Others</a></li>
-            </ul>
-        </nav>
-
-        <!-- Content Sections -->
-
-        <!-- Name & Photo -->
-        <section id="top">
-            <img src="profile.png" class="profile-pic">
-            <h3>@hiLimky 임권영</h3>
-            <h5>✉️ <a href="mailto:limky@korea.ac.kr">limky@korea.ac.kr</a></h5>
-            <h5>📞 +82) 010-6824-5512</h5>
-        </section>
-
-        <!-- Research Interests & Introduction -->
-        <section id="research-interests">
-            <h2>Research Interests</h2>
-            <h4> Mixed Reality, HCI, User Engagement and motivation, Video games, Applications of AI</h4>
-            <p>I am venturing through an academic journey that combines the fascinating realms of Art & Technology, Computer Science, and Artificial Intelligence. This multifaceted education has instilled in me a profound appreciation for Human-Computer Interaction(HCI), especially in the context of user engagement and motivation in Mixed Reality (MR) environments.</p>
-            <!-- <p>To me, HCI symbolizes a remarkable crossroad where advanced technology meets user-centric experiences.
-                Within the fast-emerging field of XR, I perceive a world rich with potential for innovative interface
-                design principles, and I am excited to contribute my own ideas—still being refined and expanded—about
-                how we can use game design principles and interactive technologies to create immersive and enjoyable
-                experiences.</p> -->
-            <p>My experience so far, through various project work and teaching roles, has provided me with a foundation in technical skills and creative problem-solving, and I am grateful for the recognition I have received. Still, I am fully aware that I am on a lifelong learning journey, and there is so much more for me to explore and master.</p>
-        </section>
-
-        <!-- Education -->
-        <section id="education">
-            <h2>Education</h2>
-            <article>
-                <div>
-            <h4>Sogang University</h4>
-            Mar. 2018 – Feb. 2024. Cum Laude
-            <li>Bachelor of Arts and Science, <a href="http://creative.sogang.ac.kr" target="_blank">Art & Technology</a></li>
-            <li>Bachelor of Science in Engineering, <a href="https://cs.sogang.ac.kr" target="_blank">Computer Science and Engineering</a></li>
-            <li>Bachelor of Science in Engineering, <a href="https://ai.sogang.ac.kr" target="_blank">Artificial Intelligence</a></li>
-            
-            </div>
-            </article>
-            <article>
-                <div>
-            <h4>Korea University</h4>
-            Mar. 2024 – current
-            <li>Master Candidate of Science, <a href="https://cs.korea.ac.kr">Computer Science and Engineering</a>, 
-            <li>Researcher <a href="http://dxp.korea.ac.kr" target="_blank">@Digital eXPerience Lab</a> under the guidance of professor Gerard Jounghyun Kim.</li>
-            </div>
-            </article>
-        </section>
-
-        <!-- Papers -->
-        <section id="papers">
-            <h2>Papers</h2>
-            <article>
-                <h4>Gwonyeong Lim, & Jung-min Park. (2023). Intuitive XR Interface for Service Robot Command. 한국정보처리학회 학술대회논문집, 30(1), 720-721.<a href="https://kiss.kstudy.com/Detail/Ar?key=4028512" target="_blank">(link)</a></h4>
-            </article>
-            <article>
-                <h4>Hannah Park, Gwonyeong Lim, & Jean Ho Chu. (2024). PHOTOWAVE, Photo Kiosk Based on Facial Recognition AI Model, 한국HCI학회 학술대회, 2024, 1289-1291. <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11714852" target="_blank">(link)</a></h4>
-            </article>
-        </section>
-
-        <!-- Awards -->
-        <section id="awards">
-            <h2>Awards</h2>
-            <article>
-                <h4>Excellence Award, Sogang Convergence Technology Contest 2023-1</h4>
-            </article>
-            <article>
-                <h4>Bronze Award, Annual Spring Conference of KIPS 2023 Paper Contest</h4>
-            </article>
-            <article>
-                <h4>Best Student Top 3, Made With Unity Korea Award 2023: Top 36, Unity Technologies Korea <a href="https://unitysquare.co.kr/madewith/mwu">(link)</a></h4>
-            </article>
-            <article>
-                <h4>Best Excellence Award, Sogang Convergence Technology Contest 2023-2</h4>
-            </article>
-        </section>
-
-        <!-- f. Career Experiences -->
-        <section id="careers">
-            <h2>Career Experiences</h2>
-            <article>
-                <div>
-                    <h3>Research Intern</h3>
-                    <h4>Center of Intelligent & Interactive Robotics, Korea Institute of Science and Technology (KIST)
-                    </h4>
-                    <p>Contributed to research under the advisement of Dr. Jung-Min Park. -- Dec. 2022 – Feb. 2023</p>
-                    <br><h4>Dept. of Art & Technology, Sogang University
-                    </h4>
-                    <p>Contributed as a developer to the research project titled "Enhancing Multi-user Coexistence in the Metaverse through Multisensory Interactions", under the guidance of Professor Jean Ho Chu -- Sep. 2023 – Feb. 2024</p>
-                </div>
-            </article>
-            
-            <article>
-                <div>
-                    <h3>Teaching Assistant, Sogang University</h3>
-                    <b>AI/SW Education Center</b>
-                    <p>
-                        <li>STS2008 Advanced Applied C Programming -- Fall 2021, 2023</li>
-                        <li>STS2011 Introduction to BigData Programming -- Spring 2022</li>
-                        <li>COR1010 Introduction to AI Programming -- Summer 2022</li>
-                    </p>
-                    <b>College of Media, Arts and Science</b>
-                    <p>
-                        <li>MAS2008 Fundamentals of Programming and Problem Solving -- Fall 2022, 2023</li>
-                    </p>
-                    <b> Convergence Software Major</b>
-                        <li>CSW2020 Introduction to Java Language -- Fall 2022</li>
-                        <li>CSW2010 Introduction to C Language -- Spring 2023</li>
-                    </p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h3>Teaching Assistant, Korea University</h3>
-                    <b>Dept. of Computer Science and Engineering</b>
-                    <p>
-                        <li>COSE101 Computer Programming I -- Spring 2024</li>
-                    </p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h3>Instructor</h3>
-                    <b>High School (광양제철고등학교)</b>
-                    <p>
-                        <li>Game Design (20hrs) -- Spring 2022, 2023</li>
-                        <li>Game Programming (12hrs) -- Summer 2022</li>
-                        <li>JavaScript Visual Computing (20hrs) -- Summer 2023</li>
-                    </p>
-                    <b>Coding Academy (코딩영재컴퓨터학원)</b>
-                    <p>
-                        Instructor, Korea Olympiad in Informatics (KOI) class -- Jan. – Sep. 2022
-                    </p>
-                </div>
-            </article>
-        </section>
-
-        <section id="projects">
-            <h2>Practical Projects</h2>
-            <article> 
-                <div>
-                    <h3>MONOWAVE</h3>
-                    <p>Team (7 people), Team Lead & game programming / May 2023-on development</p>
-                    <p>A puzzle platformer adventure game inspired by human emotions, currently under development as a project for BBB, indie game development group. It exhibited at the Busan Indie Connect Festival (BIC) at BEXCO, Busan, in Aug. 2023, and Burning Beaver: Indie Game & Culture Festival at DDP, Seoul in Dec. 2023. It won Made With Unity Korea Award in Oct. 2023.
-                        <a href="https://linktr.ee/monowave.bbb">(LinkTree)</a>
-                        <a href="https://store.steampowered.com/app/2680440/MONOWAVE/?beta=1" target="_blank">(Steam)</a>
-                        <a href="https://youtu.be/DrYupuif9a4" target="_blank">(trailer)</a>
-                        <a href="https://youtu.be/rFXkkZp7hZI" target="_blank">(demoVideo)</a>
-                    </p>
-                </div>
-                <img src="image4.jpeg">
-            </article>
-            <article>
-                <div>
-                    <h3>Signal Journey: Navigating by visual and aural signals to diminish proximity</h3>
-                    <p>Team (6 people), VR Development / Sep.2023-Feb.2024
-                        2023</p>
-                    <p>This project explores the emotional effects of proximity in VR, using the interaction of cool and warm air to influence players' visual and auditory experiences. Players, equipped with VR headsets and controllers, move through four stages of distance from long-range to very close-range, experiencing intensified color saturation, sound diversity, and volume as they approach each other. Early stages involve exchanging flowers to locate the other player, while the close-range stage utilizes 3-D audio for navigation, offering a novel way to perceive emotional closeness.
-                        <a href="https://www.youtube.com/watch?v=XJNHQvCZBbs&ab_channel=JeanHoChu" target="_blank">(video)</a>
-                        <a href="https://www.nextstorygroup.org/signaljourney.html" target="_blank">(page)</a>
-                    </p>
-                </div>
-                <img src="http://nextstorygroup.org/signaljourney/Representative_Image.jpeg">
-            </article>
-            <article>
-                <div>
-                    <h3>Liar of Turing: A Multiplayer Chat Application with AI Integration</h3>
-                    <p>Team (2 people), Prompt Engineering, Design & Planning / Sep.-Dec. 2023</p>
-                    <p>A web-chat application that blends human interaction with advanced AI technology. This unique web application is designed for five users to engage in a chat session with two AI agents, creating an exciting and unpredictable conversational experience.
-                        <a href="https://github.com/crescent-stdio/liar-of-turing" target="_blank">(GitHub)</a>
-                    </p>
-                </div>
-                <img src="https://raw.githubusercontent.com/crescent-stdio/liar-of-turing/main/.github/images/liar-of-turing.png">
-            </article>
-            <article>
-                <div>
-                    <h3>PHOTOWAVE: Photo Kiosk Based on Facial Recognition AI Model</h3>
-                    <p>Team (2 people), Design & Planning / Sep.-Nov. 2023</p>
-                    <p>This work explores the impact on user experience of a new type of instant photo booth with the addition of artificial intelligence (AI) that recognizes facial expressions. The work was created as a web application, and through field testing through the exhibition, we observed how users interacted with the AI's emotional judgment.
-                        <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11714852" target="_blank">(paper)</a>
-                        <a href="https://youtu.be/nsfCqhVLwaI" target="_blank">(video)</a>
-                    </p>
-                </div>
-                <img src="image9.png">
-            </article>
-            <article>
-                <div>
-                    <h3>My Cat is VIRTUALLY Cute, or Maybe Not?</h3>
-                    <p>Team (5 people), Team Lead & game programming / Mar.-Dec. 2022</p>
-                    <p>XR simulation game of raising a cat using Leapmotion Controller, designing interface that
-                        excludes the mouse and utilizes hand gestures, developed as a term project for AATG009 Physical
-                        Computing and as a project for BBB, indie game development group.
-                        It passed the 3rd competition in general division of the '2023 Metaverse Developer Contest' hosted by the Ministry of Science and ICT of Korea.
-                        <a href="https://youtu.be/EPpqqlIeN6o" target="_blank">(video1)</a>
-                        <a href="https://youtu.be/jqAN8gw--30?si=sEPGWzRiubJPmXSh" target="_blank">(video2)</a>
-                    </p>
-                </div>
-                <img src="image3.png">
-            </article>
-            <article>
-                <div>
-                    <h3>BACKSEAT PROGAMER: 운전 그렇게 하는 거 아닌데</h3>
-                    <p>Team (2 people), AI model implementation and game client programming / May-Jun.
-                        2023</p>
-                    <p>A Korean voice recognition-based driving game with humorous cultural contexts, developed as a
-                        term project for AAT3020 Natural Language Processing, and won the Sogang Convergence Technology
-                        Contest Award.
-                        <a href="https://drive.google.com/file/d/10FFek10nhxLl6WpzMZEL3VnSu8CaMnwr/view?usp=sharing" target="_blank">(report)</a>
-                        <a href="https://drive.google.com/file/d/1ZXWNhUIpU8WZicuRlH9BejR2Y8CAikrk/view?usp=sharing" target="_blank">(poster)</a>
-                        <a href="https://youtu.be/65Nn9J20T7Q" target="_blank">(video)</a>
-                    </p>
-                </div>
-                <img src="image2.png">
-            </article>
-            <article>
-                <div>
-                    <h3>MOAMOA PLANT</h3>
-                    <p>Team (4 people), All of game programming / May -Jun. 2022</p>
-                    <p>A 2D platformer game set in the post-pla nt era, developed as a term project for AAT4005 Games &
-                        Interactive Media. Exhibition at 현대차 정몽구재단 ‘온드림 소사이어티’
-                        <a href="https://seed-at.itch.io/moamoa-plant" target="_blank">(link)</a>
-                    </p>
-                </div>
-                <img src="image7.png">
-
-            </article>
-            <article>
-                <div>
-                    <h3>Nowhere to Go</h3>
-                    <p>Team (4 people), game programming / Jan.-Feb. 2022</p>
-                    <p>A hyper-casual game deve loped using Unity engine, released on Google Play as a project for BBB
-                        <a href="https://play.google.com/store/apps/details?id=com.monsday.run" target="_blank">(link)</a>
-                    </p>
-                </div>
-                <img src="image8.png">
-
-            </article>
-            <!-- ... Similarly, add more articles for each practical project ... -->
-        </section>
-
-        <!-- h. Other Activities -->
-        <section id="others">
-            <h2>Other Activities</h2>
-            <article>
-                <div>
-                    <h3>Team Lead & Programming, <a href="https://www.youtube.com/@studiobbb">@BBB</a></h3>
-                    <p>Jul. 2021 – Present</p>
-                    <p>Serving as team leader, game programmer, and project management tasks in game developers group.
-                    </p>
-                </div>
-                <img src="bbb.jpg">
-            </article>
-            <article>
-                <div>
-                    <h3>Alumni, <a href="https://icpc.team/introduction">@Sogang ICPC Team</a></h3>
-                    <p>Feb. 2022 – Aug. 2023</p>
-                    <p>Actively participated in various algorithm studies and problem-solving competitions, providing
-                        valuable contributions to the team. Staff at the UCPC(전국 대학생 프로그래밍 대회 동아리 연합대회) 2022 - Assisted
-                        in managing the final competition, ensuring a smooth and successful event.</p>
-                </div>
-                <img src="icpc.png">
-
-            </article>
-            <article>
-                <div>
-                    <h3>CJ Unit 6th Volunteer Coding Instructor, <a href="https://www.instagram.com/cjsw.unit/">@CJ OliveNetworks</a></h3>
-                    <p>Mar.-Jul. 2022</p>
-                    <p>Delivered basic coding education to underprivileged middle school students and developed a new
-                        Python education curriculum. Received the Activity Excellence Award(Passion Award - CEO Award)
-                        for selection of excellent curriculum (as a team)</p>
-                </div>
-                <img src="image11.png">
-
-            </article>
-            <article>
-                <div>
-                    <h3>KB Digital Mentoring Instructor <a href="https://www.sapiens.or.kr/board/programTab1.php">@KB Bank & Sapience4.0</a></h3>
-                    <p>Aug.–Nov. 2021</p>
-                    <p>Conducted daily instructional activities for middle school students, providing software
-                        education. </p>
-                </div>
-                <img src="image12.png">
-
-            </article>
-            <article>
-                <div>
-                    <h3>Alumni, <a href="https://blog.naver.com/kumu_">@KUMU(한국대학생멘토연합)</a></h3>
-                    <p>Aug. 2021 - Dec. 2022</p>
-                    <p>Planned and conducted nationwide career mentoring and educational services for middle and high
-                        school students.</p>
-                </div>
-                <img src="kumu.png">
-
-            </article>
-            <article>
-                <div>
-                    <h3>Student Council President, School of Media, Arts and Science C-Section</h3>
-                    <p>Dec. 2018 - Dec. 2019</p>
-                    <p>Led the council in networking events, planning welfare businesses, and branding project
-                        management.</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h3>Military Service : Korean Army, Honorable Discharge</h3>
-                    <p>Feb. 2020 – Aug. 2021</p>
-                </div>
-            </article>
-            <!-- ... Similarly, add more articles for each other activity ... -->
-        </section>
-
-        <section id="certificate">
-            <h2>Certificates</h2>
-            <article>
-                <div>
-                    <h3>Craftsman Computer Graphics Operation</h3>
-                    <p>한국산업인력공단, 2022.09.</p>
-            </article>
-            <article>
-                <div>
-                    <h3>Computer Specialist in Spreadsheet & Database Level-1</h3>
-                    <p>대한상공회의소, 2020.02.</p>
-                </div>
-            </article>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            Updated in Feb. 2024
-        </footer>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top">Gwonyeong Lim</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- VueJS and GSAP scripts will be linked here. -->
-    <script src="scripts.js"></script>
+  <main>
+    <section class="hero container reveal" id="hero">
+      <img src="profile.png" alt="Profile photo" class="profile-pic" />
+      <div class="hero-text">
+        <p class="chip" id="hero-title"></p>
+        <h1 id="hero-name"></h1>
+        <p class="markdown" id="hero-summary"></p>
+        <div class="hero-links" id="hero-links"></div>
+      </div>
+    </section>
+
+    <section id="about" class="container section reveal">
+      <h2>About</h2>
+      <div class="grid two">
+        <article class="card markdown-block">
+          <h3>Research / Professional Interests</h3>
+          <ul id="interests-list"></ul>
+        </article>
+
+        <article class="card markdown-block">
+          <h3>Education</h3>
+          <ul class="timeline compact" id="education-list"></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="container section reveal">
+      <h2>Experience</h2>
+      <ul class="timeline" id="experience-list"></ul>
+    </section>
+
+    <section id="projects" class="container section reveal">
+      <h2>Selected Projects</h2>
+      <div class="grid projects" id="projects-list"></div>
+    </section>
+
+    <section id="publications" class="container section reveal">
+      <h2>Publications</h2>
+      <article class="card markdown-block">
+        <ul id="publications-list"></ul>
+      </article>
+    </section>
+
+    <section id="awards" class="container section reveal">
+      <h2>Awards</h2>
+      <article class="card markdown-block">
+        <ul id="awards-list"></ul>
+      </article>
+    </section>
+
+    <section id="contact" class="container section reveal">
+      <h2>Contact</h2>
+      <article class="card markdown-block" id="contact-list"></article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span id="footer-name"></span></p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="scripts.js" type="module"></script>
 </body>
 
 </html>
