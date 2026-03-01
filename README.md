@@ -27,3 +27,11 @@ Then push:
 ```bash
 git push --force-with-lease
 ```
+
+## TSV image paths
+For image-based sections, set paths directly in TSV:
+- `data/profile.tsv` -> `profile_image` (hero/profile image)
+- `data/projects.tsv` -> `image` (project thumbnail per row)
+
+Use relative paths (e.g., `profile.png`, `images/my-project.png`).
+
