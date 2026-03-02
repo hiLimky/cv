@@ -658,8 +658,10 @@ footer { border-top: 1px solid var(--line); margin-top: 2.2rem; }
   }
 
   .section {
-    padding: 3.4mm 0;
+    padding: 2.6mm 0;
     scroll-margin-top: 0;
+    break-inside: auto;
+    page-break-inside: auto;
   }
 
   .hero-links {
@@ -682,11 +684,17 @@ footer { border-top: 1px solid var(--line); margin-top: 2.2rem; }
     height: 3.2mm;
   }
 
+  .grid,
   .grid.two,
   .projects,
   #experience-list {
-    grid-template-columns: 1fr;
-    gap: 3mm;
+    display: block !important;
+  }
+
+  .grid > *,
+  .projects > *,
+  #experience-list > li {
+    margin-bottom: 2.4mm;
   }
 
   .card,
@@ -697,8 +705,8 @@ footer { border-top: 1px solid var(--line); margin-top: 2.2rem; }
     border-radius: 2.2mm;
     box-shadow: none;
     transform: none !important;
-    break-inside: avoid;
-    page-break-inside: avoid;
+    break-inside: auto;
+    page-break-inside: auto;
     padding: 2.8mm 3mm;
   }
 
@@ -721,6 +729,20 @@ footer { border-top: 1px solid var(--line); margin-top: 2.2rem; }
   .project {
     grid-template-columns: 29mm 1fr;
     gap: 3mm;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .award-group,
+  .contact-row,
+  #publications-list li {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  #experience-list > li {
+    break-inside: auto;
+    page-break-inside: auto;
   }
 
   .project img {
@@ -806,5 +828,21 @@ footer { border-top: 1px solid var(--line); margin-top: 2.2rem; }
   .footer-meta {
     color: #5e6882;
     font-size: 7.8pt;
+  }
+}
+
+@media print and (min-width: 1100px) {
+  .grid.two,
+  .projects,
+  #experience-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3mm;
+  }
+
+  .grid > *,
+  .projects > *,
+  #experience-list > li {
+    margin-bottom: 0;
   }
 }
