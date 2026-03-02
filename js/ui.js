@@ -16,9 +16,15 @@ export const initReveal = () => {
 
 export const initNavState = () => {
   const navLinks = document.querySelectorAll('nav a');
+  const header = document.querySelector('.site-header');
+
+  const getOffset = () => {
+    const headerHeight = header ? header.offsetHeight : 0;
+    return Math.max(120, headerHeight + 22);
+  };
 
   const updateActiveNav = () => {
-    const fromTop = window.scrollY + 120;
+    const fromTop = window.scrollY + getOffset();
     navLinks.forEach((link) => {
       const section = document.querySelector(link.getAttribute('href'));
       if (!section) return;
