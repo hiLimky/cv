@@ -1,4 +1,4 @@
-title	venue	year	link
-**G.Y. Lim**, J.-M. Park. Intuitive XR Interface for Service Robot Command.	KIPS Conference (Proceedings)	2023	https://kiss.kstudy.com/Detail/Ar?key=4028512
-H. Park, **G.Y. Lim**, J.H. Chu. PHOTOWAVE: Photo Kiosk Based on Facial Recognition AI Model.	HCI Korea Conference	2024	https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11714852
-D. Lee, J. Kim, **G.Y. Lim**, Y. Cho, S. Lee, J.H. Chu. Signal Journey: Sense of Connection in a Two-Player VR Game Through a Proximity-Based Interactive Experience.	SIGGRAPH Asia 2024 XR	2024	https://dl.acm.org/doi/10.1145/3681759.3688917
+title	venue	year	link	relation_key
+D. Lee, J. Kim, **G.Y. Lim**, Y. Cho, S. Lee, J.H. Chu. Signal Journey: Sense of Connection in a Two-Player VR Game Through a Proximity-Based Interactive Experience.	SIGGRAPH Asia 2024 XR	2024.11	https://dl.acm.org/doi/10.1145/3681759.3688917	signal-journey
+H. Park, **G.Y. Lim**, J.H. Chu. PHOTOWAVE: Photo Kiosk Based on Facial Recognition AI Model.	HCI Korea Conference	2024.01	https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11714852	photowave
+**G.Y. Lim**, J.-M. Park. Intuitive XR Interface for Service Robot Command.	KIPS Spring Conference	2023.05	https://kiss.kstudy.com/Detail/Ar?key=4028512	kist-kips

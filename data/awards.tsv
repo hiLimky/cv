@@ -1,14 +1,14 @@
-award	org	year
-Nominee, Games for Impact	gamescom award 2025	2025-08
-Nominee, Creative Overkill	devcom Awards 2025	2025-08
-People's Choice: Best Creative	GAME AiCON SEOUL 2025	2025-07
-Grand Prize (1st place)	Gyeonggi Game Audition (20th)	2025-05
-Best Student Game	Taipei Game Show 2025 Indie Game Award	2025-01
-Special Prize (PTW Korea)	Global Indie Game Development Contest (GIGDC)	2024-11
-Gold Prize, University Division	Global Indie Game Development Contest (GIGDC)	2024-11
-Game Pitching, Top Prize	KGDCon 2024	2024-08
-Challenger (Student) Division, Top Prize	INDIECRAFT 2024	2024-07
-Student Division Finalist	Made with Unity Korea Awards 2023	2023-11
-Best Excellence Award	Sogang Convergence Technology Contest	2023-2
-Excellence Award	Sogang Convergence Technology Contest	2023-1
-Bronze Award	KIPS Spring Conference Paper Contest	2023
+award	org	year	relation_key
+Nominee, Games for Impact	gamescom award 2025	2025.08	
+Nominee, Creative Overkill	devcom Awards 2025	2025.08	
+People's Choice: Best Creative	GAME AiCON SEOUL 2025	2025.07	
+Grand Prize (1st place)	Gyeonggi Game Audition (20th)	2025.05	
+Best Student Game	Taipei Game Show 2025 Indie Game Award	2025.01	
+Special Prize (PTW Korea)	Global Indie Game Development Contest (GIGDC)	2024.11	
+Gold Prize, University Division	Global Indie Game Development Contest (GIGDC)	2024.11	
+Game Pitching, Top Prize	KGDCon 2024	2024.08	
+Challenger (Student) Division, Top Prize	INDIECRAFT 2024	2024.07	
+Student Division Finalist	Made with Unity Korea Awards 2023	2023.11	
+Best Excellence Award (MONOWAVE)	Sogang Convergence Technology Contest	2023.12	
+Excellence Award (Backseat Pro Gamer)	Sogang Convergence Technology Contest	2023.06	
+Bronze Award	KIPS Spring Conference Paper Contest (Conference Paper)	2023.05	kist-kips
