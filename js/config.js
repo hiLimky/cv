@@ -1,5 +1,5 @@
 export const DXP_LAB_URL = 'https://dxp.korea.ac.kr';
-export const DEFAULT_IMAGE_SRC = 'image7.png';
+export const DEFAULT_IMAGE_SRC = 'assets/images/image7.png';
 
 export const DATA_SOURCES = Object.freeze([
   { key: 'profile', path: 'data/profile.tsv', required: true },
