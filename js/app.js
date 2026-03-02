@@ -11,7 +11,7 @@ import {
   renderPublications,
   renderStaticMeta
 } from './renderers.js';
-import { initCardTilt, initCursorGlow, initNavState, initReveal, initScrollProgress } from './ui.js';
+import { initCardTilt, initCursorGlow, initNavState, initPrintAction, initReveal, initScrollProgress } from './ui.js';
 import { loadAllTSV } from './utils.js';
 
 export const boot = async () => {
@@ -48,6 +48,7 @@ export const boot = async () => {
     initScrollProgress();
     initCardTilt();
     initCursorGlow();
+    initPrintAction();
   } catch (error) {
     console.error(error);
     const heroName = document.getElementById('hero-name');

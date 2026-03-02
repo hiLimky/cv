@@ -97,3 +97,12 @@ export const initCursorGlow = () => {
 
   animate();
 };
+
+export const initPrintAction = () => {
+  const printButton = document.getElementById('print-cv');
+  if (!printButton) return;
+
+  printButton.addEventListener('click', () => {
+    window.print();
+  });
+};
